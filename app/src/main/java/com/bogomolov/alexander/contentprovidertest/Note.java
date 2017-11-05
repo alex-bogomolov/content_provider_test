@@ -11,15 +11,15 @@ public class Note {
     public String content;
     public int priority;
     public Date createdAt;
-    public String imagePath;
+    public byte[] image;
     public int id;
 
-    public Note(int id, String title, String content, int priority, String imagePath, Date date) {
+    public Note(int id, String title, String content, int priority, byte[] image, Date date) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.priority = priority;
-        this.imagePath = imagePath;
+        this.image = image;
         this.createdAt = date;
     }
 }
